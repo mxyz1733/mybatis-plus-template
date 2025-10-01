@@ -24,7 +24,7 @@ public class CommentController {
     }
 
     @PostMapping("/update")
-    public Integer updateComment(@PathParam("comment") Comment comment) {
+    public Comment updateComment(@PathParam("comment") Comment comment) {
         return commentService.updateComment(comment);
     }
 
